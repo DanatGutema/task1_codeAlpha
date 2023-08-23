@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTI PAGE SURVEY FORM </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="mailto:vtu21463@veltech.edu.in" id="surveyForm" method="post" enctype="text/plain">
+<!--welcome page #04d4a3  128075-->
+        <h1>Creating Awareness about phishing attacks</h1>
+        <!--tab one-->
+        <div class="tab" id="mine">
+             <p > &#128075; Hey i'm Danat, Student of Computer Science
+                <br>
+                I need your cooperation to make analysis about phishing attacks.
+                <br>
+                this survey is created in order to collect information about phishing attacks
+            and to make analysis of it.
+             </p>
+        </div>
+
+
+        <!--second tab-->
+        <div class="tab" id="font">
+            NAME:
+            <p><input type="text" name="firstName" id="firstName" oninput="this.className = ''" placeholder="Enter First Name"></p>
+             <p><input type="text" name="lastName" id="lastName" oninput="this.className = ''" placeholder="Enter Last Name"></p>
+        </div>
+
+
+        <!--third tab-->
+
+        <div class="tab" id="font">
+            EMAIL:
+            <p><input type="email" name="email" id="email" oninput="this.className = ''" placeholder="Enter Email Id"></p>
+            AGE:
+            <p><input type="number" name="age" id="age" oninput="this.className = ''" placeholder="Enter Age"></p>
+        </div>
+
+<!--fourth tab-->
+        <div class="tab" id="font">
+           DO YOU KNOW WHAT IS PHISHING ATTACKS? <br> <br>  
+           <input type="radio" name="firstQuestion" oninput="this.className = ''" id="first" value="YES">
+            <label for="first">YES</label> <br> <br>
+            <input type="radio" name="firstQuestion" oninput="this.className = ''" id="second" value="NO">
+            <label for="second">NO</label>  <br> <br> 
+            <input type="radio" name="firstQuestion" id="third" oninput="this.className = ''" value="I HEARD BUT I DO NOT HAVE CLEAR INFORMATION">
+            <label for="third">I HEARD BUT I DO NOT HAVE CLEAR INFORMATION</label>
+          
+        </p> 
+
+        </div>
+
+
+
+        <!--fifth tab-->
+        <div class="tab" id="font">
+           HAVE YOU EVER BEEN THE VICTIM OF THE HACKERS OR PHISHERS?
+        <p><input type="radio" name="secondQuestion" oninput="this.className = ''" id="four" value="YES">
+           YES
+        </p>
+        <p><input type="radio" name="secondQuestion" oninput="this.className = ''" id="fifth" value="NO">
+        NO
+        </p>   
+        </div>
+       
+
+        <!--sixth tab-->
+        <div class="tab" id="font">
+            DO YOU THINK THAT THE SOCIETY ESPECIALLY THE YOUTH HAVE 
+            INFORMATION ABOUT ALL THOSE ONLINE SCAMS AND ATTACKS?
+            <p><input type="radio" oninput="this.className = ''" name="thirdQuestion" id="six" value="YES">
+            YES
+            </p>
+            <p><input type="radio" oninput="this.className = ''" name="thirdQuestion" id="seven" value="NO">
+            NO
+            </p>
+        </div>
+
+
+        <!--seventh tab-->
+          <div class="tab" id="font">
+            WHAT IS YOUR PERSONAL COMMENT FOR THE ENTIRE AWARENESS CREATION PROCESS?</label>
+            <p><textarea name="eightQuestion" id="" oninput="this.className = ''" cols="30" rows="10"></textarea></p>
+
+          </div>
+
+          <!--buttons-->
+
+          <div style="overflow: auto;">
+            <div style="float:right;">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+          </div>
+
+
+          <!--steps-->
+
+           <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+           </div>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
